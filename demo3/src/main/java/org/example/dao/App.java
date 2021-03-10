@@ -19,20 +19,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class App 
 {
-    @Autowired
-    private UserInfoDOMapper userInfoDOMapper;
-
-    @RequestMapping("/")
-    public String home(){
-        int id = 1;
-      UserInfoDO userInfoDO= userInfoDOMapper.selectByPrimaryKey(id);
-       if(userInfoDO ==null){
-           return "用户不存在";
-       }else{
-           return userInfoDO.getUserName();
-       }
-
-    }
+//    @Autowired
+//    private UserInfoDOMapper userInfoDOMapper;
+//
+//    @RequestMapping("/")
+//    public String home(){
+//        int id = 2;
+//      UserInfoDO userInfoDO= userInfoDOMapper.selectByPrimaryKey(id);
+//       if(userInfoDO ==null){
+//           return "用户不存在";
+//       }else{
+//           return userInfoDO.getUserName();
+//       }
+//
+//    }
 
     public static void main( String[] args )
     {
